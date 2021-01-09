@@ -41,13 +41,14 @@ const Container = styled.div`
     }
     .text-active {
       width: 100%;
+      text-align: center;
     }
     .text-active h6 {
       color: ${color.Text};
       font-family: "Roboto", sans-serif;
       font-size: 1em;
 
-      margin: 0.5em;
+      margin:1em;
     }
     .right {
       /* display: flex;
@@ -61,7 +62,7 @@ justify-content:center;
       display:grid;
       justify-items:center;
       height: 80vh;
-      gap:1em;
+      row-gap: ${active?'0.5':'2'}em;
     }
     .left {
         
@@ -71,7 +72,7 @@ justify-content:center;
       flex-direction: column;
       align-items: center;
 
-      gap: 0.5em;
+      gap: ${active?'0.5':'2'}em;
     }
   `;
   console.log(project.length);

@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 function Card({ name, description, img, mode }) {
   const Card = styled.div`
-    width: ${mode ? "90% " : "100px"}; 
-    height: ${mode ? "129px " : "100px"};
-
+    width: 90%;
+    max-width: 270px;
+    height: 129px ;
     display: ${mode ? "block " : "none"};
     .card-img {
       width: 100%;
