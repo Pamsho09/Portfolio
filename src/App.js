@@ -1,6 +1,8 @@
 import React from 'react'
 import Home from './container/Home'
 import Projects from'./container/Projects'
+import About from './container/About'
+import Abilities from './container/Abilities'
 function App() {
 
   const colorTheme={
@@ -14,6 +16,8 @@ Text:'#FFFFFF'
     <div>
     <Home/>
     <Projects color={colorTheme}/>
+    <About/>
+    <Abilities  color={colorTheme}/>
     </div>
   )
 } 
