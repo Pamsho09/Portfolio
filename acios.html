@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    fetch("https://api.twitch.tv/pamsho_js/7a4hs3g13avzmmxl019tx4o5qdbw8g", {
+      headers: {
+        "client-id": "42zl30e3u05kycbz743yo0ygf2b2k6",
+        accept: "application/vnd.twitchtv.v5+json",
+      },
+    })
+      .then((resp) => {
+        return resp.json();
+      })
+      .then((resp) => {
+        console.log(resp);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  </script>
+</html>
+~
